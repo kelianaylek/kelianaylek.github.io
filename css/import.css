@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+.contentContainer {
+  width: 80%;
+  margin: 0 auto; }
+
+header {
+  background-image: url("../../img/wave.svg");
+  background-repeat: no-repeat;
+  background-position: right 0% top 0%; }
+  header section .contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; }
+  .logo h3 {
+    margin-top: 40px;
+    margin-left: 10px; }
+
+.introduction {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 10%; }
+  .introduction div {
+    width: 50%; }
+    .introduction div h1 {
+      margin-top: 90px; }
+    .introduction div p {
+      margin-bottom: 20px;
+      width: 50%; }
+    .introduction div button {
+      margin-bottom: 200px; }
+  .introduction .imgMegaphone {
+    background-image: url("../../img/phone.png");
+    background-repeat: no-repeat; }
+
+.mouse {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px; }
+  .mouse div {
+    padding: 19.6px 26.4px 19.2px 26.2px;
+    box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16);
+    background-color: #fff;
+    border-radius: 50px; }
+
+.socialMedias {
+  position: absolute;
+  top: 46%;
+  left: 7%; }
+  .socialMedias img {
+    display: block;
+    margin-bottom: 40px; }
+  .socialMedias hr {
+    background-color: #1000ff;
+    width: 4px;
+    height: 30px;
+    border: none; }
+
+@media screen and (max-width: 1024px) {
+  header {
+    background-size: 60%; }
+    header section .contentContainer {
+      width: 100%; }
+    header h1 span {
+      font-size: 60px; }
+    header .introduction {
+      margin: 0 auto;
+      width: 80%;
+      text-align: center;
+      justify-content: center; }
+      header .introduction div {
+        width: 100%; }
+      header .introduction div p {
+        width: 100%; }
+      header .introduction div h1 {
+        margin-top: 50px; }
+      header .introduction div button {
+        margin-bottom: 160px; }
+      header .introduction .imgMegaphone {
+        background-image: none;
+        display: none; }
+    header nav {
+      display: flex;
+      justify-content: space-between; }
+      header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-top: 20px; } }
+
+@media screen and (max-width: 768px) {
+  header .introduction div button {
+    margin-bottom: 100px; }
+  header .introduction div h1 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 30px; }
+    header .introduction div h1 span {
+      font-size: 40px; }
+  header .introduction div p {
+    margin-bottom: 40px; }
+  header .logo {
+    margin-top: 5px; }
+    header .logo h3 {
+      margin-top: 0px; }
+  header .socialMedias {
+    margin-top: 40px;
+    display: flex;
+    position: initial;
+    justify-content: space-around; }
+    header .socialMedias hr {
+      display: none; } }
+
+nav {
+  text-transform: uppercase; }
+  nav ul {
+    list-style: none; }
+    nav ul li {
+      display: inline-block; }
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0 10px; }
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  color: #42495b;
+  font-weight: normal; }
+  h1 span {
+    font-weight: bold;
+    font-size: 74px; }
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #42495b; }
+
+h3 {
+  font-family: "Dosis", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #484848; }
+
+h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  color: #7e76f9; }
+
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #42495b; }
+
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #7e76f9; }
+
+.introduction p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #7a839e; }
+
+.whoWeAre p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #7a839e; }
+
+.whatWeOffer p {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.47;
+  color: #42495b; }
+
+.ourPricing p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.56;
+  color: #7a839e; }
+
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 30px; }
+  h3 {
+    font-size: 20px; } }
+
+.btn, .btn--headerBtn, .btn--whoWeAreBtn, .btn--whatWeOfferBtn, .btn--ourPricingBtn, .btn--ourPricingSelectedBtn, .btn--subscribeBtn {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #1a129f 66%, #6156F9 100%);
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 500;
+  border: none;
+  outline: none; }
+  .btn--headerBtn {
+    font-size: 16px;
+    padding: 13px 40px; }
+  .btn--whoWeAreBtn {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 16px 52.2px 15.4px 52px; }
+  .btn--whatWeOfferBtn {
+    font-size: 12px;
+    padding: 6px 18.5px 6.7px 18px; }
+  .btn--ourPricingBtn {
+    font-size: 16px;
+    padding: 15px 40.4px 14px 41.6px;
+    border: solid 1px #1000ff;
+    color: #42495b;
+    background: #fff;
+    text-transform: none; }
+  .btn--ourPricingSelectedBtn {
+    padding: 14px 41.4px 15px 40.6px;
+    font-size: 16px;
+    color: #fff; }
+  .btn--subscribeBtn {
+    font-size: 16px;
+    padding: 15px 45px 14px; }
+
+.backgroundWhoWeAre {
+  background: url("../../img/background-we-are.png");
+  background-repeat: no-repeat;
+  background-position: right 0; }
+  .backgroundWhoWeAre .whoWeAre {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; }
+    .backgroundWhoWeAre .whoWeAre img {
+      margin-top: 50px; }
+
+.whoWeAre div {
+  width: 50%; }
+  .whoWeAre div h6 {
+    margin-top: 100px;
+    margin-bottom: 10px; }
+  .whoWeAre div h2 {
+    margin-bottom: 20px; }
+  .whoWeAre div p {
+    margin-bottom: 40px;
+    width: 75%; }
+
+@media screen and (max-width: 1024px) {
+  .backgroundWhoWeAre .whoWeAre {
+    display: block; }
+  .whoWeAre div {
+    width: auto;
+    margin: 0 auto;
+    text-align: center; }
+    .whoWeAre div h6 {
+      margin-top: 10px;
+      margin-bottom: 0px; }
+    .whoWeAre div p {
+      margin: 0 auto;
+      margin-bottom: 10px;
+      width: 90%; }
+  .whoWeAre div:first-child {
+    display: flex;
+    justify-content: center; }
+  .backgroundWhoWeAre .whoWeAre img {
+    margin-top: 0;
+    width: 80%; } }
+
+.whatWeOffer {
+  margin-top: 150px; }
+  .whatWeOffer .backgroundCards {
+    background-image: url("../../img/background-service.png");
+    padding-bottom: 172px;
+    background-repeat: no-repeat; }
+  .whatWeOffer h4 {
+    margin-left: 30px; }
+  .whatWeOffer h2 {
+    margin-bottom: 90px;
+    margin-left: 30px; }
+
+.containerCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .containerCards .servicesCards {
+    padding: 20px 30px;
+    width: calc(100%/3 - 50px);
+    border-radius: 36px;
+    box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.1);
+    margin-bottom: 112px;
+    background-color: #fff; }
+
+.servicesCards .logosServicesCards {
+  display: flex;
+  justify-content: center; }
+
+.servicesCards h5 {
+  margin: 38px 0; }
+
+.servicesCards p {
+  margin-bottom: 50px;
+  overflow: hidden;
+  max-height: 65px; }
+
+.servicesCards .btnServicesCards {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px; }
+
+@media screen and (max-width: 1024px) {
+  .containerCards .servicesCards {
+    width: calc(100%/2 - 50px); } }
+
+@media screen and (max-width: 768px) {
+  .containerCards .servicesCards {
+    width: calc(100%); }
+  .whatWeOffer .backgroundCards {
+    padding-bottom: 0px; } }
+
+@media screen and (max-width: 576px) {
+  .whatWeOffer {
+    margin-top: 40px; }
+    .whatWeOffer h2 {
+      margin-bottom: 20px; }
+    .whatWeOffer .containerCards .servicesCards {
+      margin-bottom: 40px; } }
+
+.ourPricing {
+  background-color: rgba(126, 118, 249, 0.15);
+  padding-top: 90px;
+  padding-bottom: 97px;
+  text-align: center; }
+  .ourPricing h5 {
+    font-size: 28px; }
+  .ourPricing h2 {
+    margin-bottom: 60px; }
+
+.containerOurPricingCards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .containerOurPricingCards .ourPricingCards {
+    width: calc(100%/3 - 50px);
+    border-radius: 26px;
+    background-color: #ffffff;
+    padding: 57px 40px; }
+    .containerOurPricingCards .ourPricingCards h5 {
+      margin-bottom: 65px; }
+    .containerOurPricingCards .ourPricingCards p {
+      margin-bottom: 36px;
+      overflow: hidden;
+      max-height: 65px; }
+    .containerOurPricingCards .ourPricingCards p:nth-child(3) {
+      font-size: 30px;
+      color: #1000ff;
+      font-weight: bold; }
+
+@media screen and (max-width: 1024px) {
+  .containerOurPricingCards .ourPricingCards {
+    width: calc(100%/2 - 50px);
+    margin-bottom: 40px; } }
+
+@media screen and (max-width: 768px) {
+  .containerOurPricingCards .ourPricingCards {
+    width: calc(100%);
+    margin-bottom: 40px; } }
+
+@media screen and (max-width: 576px) {
+  .ourPricing {
+    padding: 20px 0px; }
+    .ourPricing h2 {
+      margin-bottom: 20px; }
+    .ourPricing .containerOurPricingCards .ourPricingCards {
+      padding: 20px 20px; }
+      .ourPricing .containerOurPricingCards .ourPricingCards h5 {
+        margin-bottom: 10px; }
+      .ourPricing .containerOurPricingCards .ourPricingCards p {
+        margin-bottom: 10px; } }
+
+footer {
+  background-image: url("../../img/footer.png");
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 0px;
+  background-size: contain;
+  padding-top: 135px;
+  padding-bottom: 88px;
+  color: #fff;
+  font-family: "Poppins", sans-serif; }
+  footer .form {
+    text-align: center;
+    margin-bottom: 362px; }
+    footer .form h3 {
+      margin-bottom: 40px;
+      font-family: "Poppins", sans-serif;
+      font-weight: normal; }
+      footer .form h3 span {
+        font-weight: bold; }
+
+.form input {
+  background-color: #f6f7fb;
+  border: none;
+  height: 52px;
+  padding-left: 30px;
+  margin-right: 26px;
+  width: 430px;
+  outline: none;
+  caret-color: #1000ff; }
+
+.infosFooter {
+  display: flex;
+  justify-content: space-around; }
+  .infosFooter div p:first-child,
+  .infosFooter table p {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px; }
+  .infosFooter p,
+  .infosFooter table tbody td {
+    font-size: 16px;
+    padding-bottom: 10px; }
+  .infosFooter table thead p {
+    text-align: left; }
+
+.logosFooter {
+  text-align: center; }
+  .logosFooter p:first-child {
+    font-size: 50px !important;
+    font-family: "Dosis", sans-serif; }
+  .logosFooter p {
+    font-size: 31px; }
+  .logosFooter div {
+    display: flex;
+    justify-content: space-between; }
+    .logosFooter div img {
+      color: #fff;
+      width: 25px; }
+
+.contactFooter i {
+  margin-right: 10px; }
+
+.contactFooter p:last-child {
+  margin-top: 20px; }
+
+@media screen and (max-width: 1024px) {
+  footer {
+    background-image: none;
+    padding-bottom: 20px; }
+  footer .form {
+    margin-bottom: 40px; }
+  .form {
+    margin-bottom: 50px; }
+    .form input {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      border-radius: 25px; }
+  .contentContainer {
+    width: 90%; }
+  .infosFooter {
+    display: flex;
+    color: #7e76f9;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .infosFooter > div,
+  .infosFooter > table {
+    width: calc(100%/4 -40px); }
+  .logosFooter p:first-child {
+    font-size: 20px !important; }
+  .logosFooter p {
+    font-size: 20px; }
+  .infosFooter table thead p {
+    text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 20px 0px; }
+  form input {
+    display: block; }
+  .infosFooter > div,
+  .infosFooter > table {
+    text-align: center;
+    width: calc(100%/2 - 40px); } }
+
+@media screen and (max-width: 576px) {
+  .infosFooter > div,
+  .infosFooter > table {
+    width: calc(100% - 40px);
+    margin-bottom: 20px; }
+  .infosFooter table p {
+    margin-bottom: 10px; }
+  .infosFooter table thead p {
+    text-align: center; } }

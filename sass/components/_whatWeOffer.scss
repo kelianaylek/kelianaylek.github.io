@@ -1,0 +1,76 @@
+.whatWeOffer {
+    margin-top: 150px;
+    .backgroundCards {
+        background-image: url("../../img/background-service.png");
+        padding-bottom: 172px;
+        background-repeat: no-repeat;
+    }
+    h4 {
+        margin-left: 30px;
+    }
+    h2 {
+        margin-bottom: 90px;
+        margin-left: 30px;
+    }
+}
+
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .servicesCards {
+        padding: 20px 30px;
+        width: calc(100%/3 - 50px);
+        border-radius: 36px;
+        box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.1);
+        margin-bottom: 112px;
+        background-color: #fff;
+    }
+}
+
+.servicesCards {
+    .logosServicesCards {
+        display: flex;
+        justify-content: center;
+    }
+    h5 {
+        margin: 38px 0;
+    }
+    p {
+        margin-bottom: 50px;
+        overflow: hidden;
+        max-height: 65px;
+    }
+    .btnServicesCards {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width:$large-screen-width) {
+    .containerCards .servicesCards {
+        width: calc(100%/2 - 50px);
+    }
+}
+
+@media screen and (max-width:$medium-screen-width) {
+    .containerCards .servicesCards {
+        width: calc(100%);
+    }
+    .whatWeOffer .backgroundCards {
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:$small-screen-width) {
+    .whatWeOffer {
+        margin-top: 40px;
+        h2 {
+            margin-bottom: 20px;
+        }
+        .containerCards .servicesCards {
+            margin-bottom: 40px;
+        }
+    }
+}

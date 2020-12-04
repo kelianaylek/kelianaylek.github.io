@@ -1,0 +1,58 @@
+.backgroundWhoWeAre {
+    background: url("../../img/background-we-are.png");
+    background-repeat: no-repeat;
+    background-position: right 0;
+    .whoWeAre {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        img {
+            margin-top: 50px;
+        }
+    }
+}
+
+.whoWeAre div {
+    width: 50%;
+    h6 {
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+    h2 {
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 40px;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:$large-screen-width) {
+    .backgroundWhoWeAre .whoWeAre {
+        display: block;
+    }
+    .whoWeAre div {
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+        h6 {
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        p {
+            margin: 0 auto;
+            margin-bottom: 10px;
+            width: 90%;
+        }
+    }
+    .whoWeAre div:first-child {
+        display: flex;
+        justify-content: center;
+    }
+    .backgroundWhoWeAre .whoWeAre img {
+        margin-top: 0;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:$medium-screen-width) {}

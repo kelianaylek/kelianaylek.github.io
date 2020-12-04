@@ -1,0 +1,81 @@
+h1 {
+    font-family: $font-poppins;
+    font-size: 50px;
+    color: $grey-dark;
+    font-weight: normal;
+    span {
+        font-weight: bold;
+        font-size: 74px;
+    }
+}
+
+h2 {
+    font-family: $font-poppins;
+    font-size: 50px;
+    font-weight: 600;
+    color: $grey-dark;
+}
+
+h3 {
+    font-family: $font-dosis;
+    font-size: 40px;
+    font-weight: bold;
+    color: $grey;
+}
+
+h4 {
+    font-family: $font-lato;
+    font-size: 25px;
+    color: $purple;
+}
+
+h5 {
+    font-family: $font-poppins;
+    font-size: 18px;
+    font-weight: 600;
+    color: $grey-dark;
+}
+
+h6 {
+    font-family: $font-poppins;
+    font-size: 20px;
+    color: $purple;
+}
+
+.introduction p {
+    font-family: $font-poppins;
+    font-size: 16px;
+    font-weight: 300;
+    color: $grey-light;
+}
+
+.whoWeAre p {
+    font-family: $font-poppins;
+    font-size: 16px;
+    font-weight: 300;
+    color: $grey-light;
+}
+
+.whatWeOffer p {
+    font-family: $font-lato;
+    font-size: 15px;
+    line-height: 1.47;
+    color: $grey-dark;
+}
+
+.ourPricing p {
+    font-family: $font-poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.56;
+    color: $grey-light;
+}
+
+@media screen and (max-width:$small-screen-width) {
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
